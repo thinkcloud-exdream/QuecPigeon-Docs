@@ -232,6 +232,7 @@ bare_metal_backend.py
 .. code-block:: python3
     :caption: 修改后
     :linenos:
+    :emphasize-lines: 1
 
     BAUDRATE = 57600
 
@@ -257,6 +258,7 @@ bare_metal_backend.py
 .. code-block:: python3
     :caption: 修改后
     :linenos:
+    :emphasize-lines: 2
 
     if hex_mode:
         self._execute_without_output("from ubinascii import hexlify as __temp_hexlify")    
