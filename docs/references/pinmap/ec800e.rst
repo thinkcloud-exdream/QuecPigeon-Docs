@@ -1,0 +1,44 @@
+.. 网页标题
+
+.. .. title:: 主页
+
+.. Metadata
+
+.. meta::
+   :description: EC800E 模块引脚功能表（QuecPython）
+   :keywords: QuecPython, quecpython, MicroPython, micropython, EC800E, ec800e
+
+.. 默认语法高亮
+
+.. highlight:: python
+
+
+EC800E-CN 模块引脚功能表（QuecPython）
+===========================================
+
+
+.. warning:: 
+   本资料缺少可信来源，尚未完成构建和审校。
+
+   请勿在实际开发时进行参考。
+
+
+
+.. csv-table::
+   :file: ./media/ec800e.csv
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+
+.. rubric:: 备注
+
+
+.. [1] 正式版资料尚未公开。
+
+.. [2] 正式版资料尚未公开。
+
+.. [3] 部分 GPIO 之间存在冲突关系，无法同时使用，硬件设计时请务必注意。部分型号，如 EC800ECNLE 和 EC800ECNLQ 等，仅可使用其中的部分 GPIO。详见 `官方 Wiki`_ 。
+
+
+.. _官方 Wiki: https://python.quectel.com/wiki/#/

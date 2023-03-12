@@ -1,0 +1,41 @@
+.. 网页标题
+
+.. .. title:: 主页
+
+.. Metadata
+
+.. meta::
+   :description: EC800M 模块引脚功能表（QuecPython）
+   :keywords: QuecPython, quecpython, MicroPython, micropython, EC800M, ec800m
+
+.. 默认语法高亮
+
+.. highlight:: python
+
+
+EC800M-CN 模块引脚功能表（QuecPython）
+===========================================
+
+
+.. attention:: 
+   本文档的部分内容缺少可信来源，尚未完成构建和审校。
+   
+   不建议在实际开发时用于参考。
+
+
+.. csv-table::
+   :file: ./media/ec800m.csv
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+
+.. rubric:: 备注
+
+.. [1] 指适用于标准 AT 开发方式的《Quectel_EC800M-CN_硬件设计手册》中规定的引脚名称。
+
+.. [2] 指适用于 QuecOpen（CSDK）开发方式的《Quectel_EC800M-CN_QuecOpen_硬件设计手册》中规定的引脚名称。
+
+.. [3] 当开启流控功能时，EC800M 的 UART1 被映射到引脚 22 和 23。当不开启流控功能时，EC800M 与 EC800N 一样，UART1 被映射到引脚 50 和 51。此外，EC800MCNGA 型号的 UART1 用于连接定位芯片，用户不可使用。
+
+

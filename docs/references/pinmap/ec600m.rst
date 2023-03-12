@@ -1,0 +1,39 @@
+.. 网页标题
+
+.. .. title:: 主页
+
+.. Metadata
+
+.. meta::
+   :description: EC600M 模块引脚功能表（QuecPython）
+   :keywords: QuecPython, quecpython, MicroPython, micropython, EC600M, ec600m
+
+.. 默认语法高亮
+
+.. highlight:: python
+
+
+EC600M-CN 模块引脚功能表（QuecPython）
+===========================================
+
+
+.. attention:: 
+   本文档的部分内容缺少可信来源，不建议在实际开发时用于参考。
+
+
+.. csv-table::
+   :file: ./media/ec600m.csv
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+
+.. rubric:: 备注
+
+.. [1] 指适用于标准 AT 开发方式的《Quectel_EC600M-CN_硬件设计手册》中规定的引脚名称。
+
+.. [2] 指适用于 QuecOpen（CSDK）开发方式的《Quectel_EC600M-CN_QuecOpen_硬件设计手册》中规定的引脚名称。
+
+.. [3] 当开启流控功能时，EC600M 的 UART1 被映射到引脚 33 和 34。当不开启流控功能时，EC600M 与 EC600S、EC600N 一样，UART1 被映射到引脚 3 和 2。
+
+

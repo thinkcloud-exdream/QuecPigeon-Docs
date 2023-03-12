@@ -1,0 +1,61 @@
+排针 J5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table:: 
+    :header: 位号, 丝印, 物理引脚号 [1]_, 引脚名称 [2]_, 电平范围 [3]_, 功能 1 [4]_, 功能 2 [4]_, 说明
+    :widths: 10, 10, 15, 20, 15, 15, 15, 15
+
+    1, GND, , , GND, , , 
+    2, GND, , , GND, , , 
+    3,MISO,3,SPI_MISO,3.3 V,GPIO1,SPI0_MISO,
+    4,MOSI,4,SPI_MOSI,3.3 V,GPIO2,SPI0_MOSI,
+    5,CLK,5,SPI_CLK,3.3 V,GPIO3,SPI0_CLK,
+    6,CS,6,SPI_CS,3.3 V,GPIO4,SPI0_CS,
+    7,TXD1,29,AUX_TXD,3.3 V,GPIO12,UART1_TXD,
+    8,RXD1,28,AUX_RXD,3.3 V,GPIO11,UART1_RXD,
+    9,P25,25,GPIO2 [5]_,3.3 V,GPIO10,,
+    10,SDA1,22,AUX_CTS,3.3 V,GPIO8,I2C0_SDA,
+    11,SCL1,23,AUX_RTS,3.3 V,GPIO9,I2C0_SCL,
+    12,SDA2,21,DCD,3.3 V,GPIO7,I2C1_SDA,
+    13,SCL2,20,RI,3.3 V,GPIO6,I2C1_SCL,  
+    14 [6]_, GND, , , GND, , , 
+    15 [6]_, GND, , , GND, , , 
+
+
+排针 J6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table:: 
+    :header: 位号, 丝印, 物理引脚号 [1]_, 引脚名称 [2]_, 电平范围 [3]_, 功能 1 [4]_, 功能 2 [4]_, 说明
+    :widths: 10, 10, 15, 20, 15, 15, 15, 15
+
+
+    1,5V,,,5.0 V,,,
+    2,3V3,,,3.3 V,,,
+    3,1V8,24,VDD_EXT,1.8 V,,,不建议连接外部器件
+    4,RXD2 [7]_,17,RXD,3.3 V,,,
+    5,TXD2 [7]_,18,TXD,3.3 V,,,
+    6,RXD0 [7]_,38,DBG_RXD,3.3 V,,,
+    7,TXD0 [7]_,39,DBG_TXD,3.3 V,,,
+    8,P30,30,GPIO5,3.3 V,GPIO13,,
+    9,P31,31,GPIO4,3.3 V,GPIO14,,
+    10,P32,32,GPIO10,3.3 V,GPIO15,,与 S4 相连
+    11,P33,33,GPIO11,3.3 V,GPIO16,,与 S5 相连
+    12,EINT,19,PSM_EINT,1.07 V,,,
+    13,ADC,9,ADC,,ADC0,,
+    14 [6]_,GND,,,GND,,,
+    15 [6]_,VBAT,"42, 43",VBAT,3.3 V,,,不建议连接外部器件
+
+
+按键
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table:: 
+    :header: 位号, 丝印, 物理引脚号 [1]_, 引脚名称 [2]_, 电平范围 [3]_, 功能 1 [4]_, 功能 2 [4]_, 说明
+    :widths: 10, 10, 15, 20, 15, 15, 15, 15
+
+    S1,PWK,7,PWRKEY,1.07 V,,,
+    S2,RST,15,RESET,1.07 V,,,
+    S3,EINT,19,PSM_EINT,1.07 V,,,
+    S4,KEY1,32,GPIO10,3.3 V,GPIO15,,
+    S5,KEY2,33,GPIO11,3.3 V,GPIO16,,

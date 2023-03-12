@@ -1,0 +1,91 @@
+%% 从左向右的方式画流程图
+flowchart LR
+
+%% 首先建立所有的元素块
+
+    %% USB 接口
+    USBC(USB Type-C\nPort\nJ1)
+    
+    %% 板载排针
+    subgraph PIN[Pin Headers]
+        direction TB
+        J5(J5)
+        J6(J6)
+    end
+    
+    %% USB 转串口
+    U2S(USB to UART\nBridge\nU4)
+    
+    %% 电平转换芯片
+    TRANIN1(Voltage\nTranslators)
+    TRANIN2(Voltage\nTranslators)
+    TRANOUT(Voltage\nTranslators)
+    
+    %% SIM 卡
+    SIM(SIM Card\nCARD1)
+    
+    %% 网络灯
+    LED(NET Light\nD1)
+    
+    %% 天线
+    ANT(Antenna\nOn-Board)
+    
+    %% ADC 分压电路
+    DIV(Voltage\nDividers)
+
+    %% 串口切换开关
+    subgraph SW[Switch]
+        direction LR
+        K2(K2)
+        K3(K3)
+    end
+    
+    %% 功能按键
+    subgraph Key1[Functional Keys]
+        direction LR
+        S1(Power Key\nS1)
+        S2(Reset Key\nS2)
+        S3(Ext. Int\nS3)
+    end
+    
+    %% 用户按键
+    subgraph Key2[User Keys]
+        direction TB
+        S4(S4)
+        S5(S5)
+    end	
+    
+    %% 主模块
+    subgraph BC25
+        direction LR
+        ADC[ADC]
+        GPIO[GPIOs]
+        I2C[I2Cs]
+        SPI[SPI]
+        U1[UX UART]
+        U2[MAIN UART]
+        U0[DEBUG UART]
+    end
+    
+    
+    %% 开始建立连接关系，遵循从左到右原则
+    
+    %% 左侧输入（对内接口），右侧输出（对外接口）
+    
+    %% USB 链路
+    USBC <--> U2S <--> SW
+    K2 <--> U2
+    K3 <--> U0
+    
+    %% 排针链路
+    PIN <--> TRANIN1 <--> GPIO & I2C & SPI & U1
+    PIN --> DIV --> ADC
+    PIN <--> TRANIN2 <--> SW
+    
+    %% 输出链路
+    GPIO <--> TRANOUT <--> Key2
+    BC25 <--> Key1
+    BC25 <--> SIM
+    BC25 --> LED
+    BC25 <-.-> ANT
+    

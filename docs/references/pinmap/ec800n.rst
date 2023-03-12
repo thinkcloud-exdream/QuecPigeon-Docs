@@ -1,0 +1,35 @@
+.. 网页标题
+
+.. .. title:: 主页
+
+.. Metadata
+
+.. meta::
+   :description: EC800N 模块引脚功能表（QuecPython）
+   :keywords: QuecPython, quecpython, MicroPython, micropython, EC800N, ec800n
+
+.. 默认语法高亮
+
+.. highlight:: python
+
+
+EC800N-CN 模块引脚功能表（QuecPython）
+===========================================
+
+
+.. csv-table::
+   :file: ./media/ec800n.csv
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+
+.. rubric:: 备注
+
+.. [1] 指适用于标准 AT 开发方式的《Quectel_EC800N-CN_硬件设计手册》中规定的引脚名称。
+
+.. [2] 指适用于 QuecOpen（CSDK）开发方式的《Quectel_EC800N-CN_QuecOpen_硬件设计手册》中规定的引脚名称。
+
+
+
+

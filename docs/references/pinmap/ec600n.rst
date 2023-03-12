@@ -1,0 +1,41 @@
+.. 网页标题
+
+.. .. title:: 主页
+
+.. Metadata
+
+.. meta::
+   :description: EC600N 模块引脚功能表（QuecPython）
+   :keywords: QuecPython, quecpython, MicroPython, micropython, EC600N, ec600n
+
+.. 默认语法高亮
+
+.. highlight:: python
+
+
+EC600N-CN 模块引脚功能表（QuecPython）
+===========================================
+
+
+.. attention:: 
+   本文档已超过 6 个月未进行审校，内容与实际情况可能存在差异。
+
+   请以 QuecPython 官方资料为准。
+
+
+.. csv-table::
+   :file: ./media/ec600n.csv
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+
+.. rubric:: 备注
+
+.. [1] 指适用于标准 AT 开发方式的《Quectel_EC600N-CN_硬件设计手册》中规定的引脚名称。
+
+.. [2] 指适用于 QuecOpen（CSDK）开发方式的《Quectel_EC600N-CN_QuecOpen_硬件设计手册》中规定的引脚名称。
+
+.. [3] 仅 EC600N R1.1 模块带有 145 - 148 号引脚。
+
+

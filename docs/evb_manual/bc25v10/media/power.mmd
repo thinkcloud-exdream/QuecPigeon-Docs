@@ -1,0 +1,20 @@
+%% 从左向右的方式画流程图
+flowchart LR
+
+    
+    EXP(External Power\nSupply Input\nJ3)
+    USBC(USB Type-C\nPort\nJ1)
+    SW1(Switch\nK1)
+    PIN(Pin Headers\nJ5, J6)
+    LDO(LDO\nU3)
+    CPU(BC25\nU1)
+    
+    
+    EXP == 5V ==> SW1
+    USBC == 5V ==> SW1
+    PIN == 5V ==> LDO
+    
+    SW1 ==> LDO -- VBAT\n3.3V --> CPU
+    
+    PIN -- 3.3V --> CPU
+    CPU -. VDD_EXT\n1.8V .-> PIN  
